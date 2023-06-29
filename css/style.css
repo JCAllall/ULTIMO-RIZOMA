@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/* header */
+
+.header {
+    background-color: rgb(27, 45, 141);
+}
+
+/*navbar*/
+
+#nav-bar {
+    display: flex;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.logorizoma {
+    display: flex;
+    width: 100px;
+    height: 80px;
+}
