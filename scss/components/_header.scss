@@ -1,0 +1,24 @@
+@import '../base/variables';
+
+header {
+    background-color: $bg-color-general;
+    #nav-bar {
+        height: 140px;
+        align-items: center;
+        justify-content: center;
+        div {
+            
+            .logo-nav {
+                height: 80px;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-decoration: none;
+        }
+    }
+};

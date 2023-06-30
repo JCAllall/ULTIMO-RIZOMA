@@ -1,26 +1,22 @@
-*{
-    margin:0;
-    padding:0;
+/* variables */
+header {
+  background-color: rgb(255, 230, 89);
+}
+header #nav-bar {
+  height: 140px;
+  align-items: center;
+  justify-content: center;
+}
+header #nav-bar div .logo-nav {
+  height: 80px;
+}
+header #nav-bar ul {
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
 }
 
-
-/* header */
-
-.header {
-    background-color: rgb(27, 45, 141);
-}
-
-/*navbar*/
-
-#nav-bar {
-    display: flex;
-    width: 100%;
-    background-color: aliceblue;
-    padding: 20px;
-}
-
-.logorizoma {
-    display: flex;
-    width: 100px;
-    height: 80px;
-}
+/*# sourceMappingURL=style.css.map */
