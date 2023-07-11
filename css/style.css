@@ -1,7 +1,7 @@
 /* variables */
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
 header {
-  background-color: rgb(249, 249, 253);
+  background-color: rgb(4, 4, 39);
   position: relative;
   padding: 0 2rem;
 }
@@ -17,7 +17,6 @@ header #nav-bar {
 header #nav-bar .logo {
   display: flex;
   height: 2rem;
-  border: 2px solid chocolate;
   width: auto;
   justify-content: center;
   align-items: center;
@@ -32,7 +31,7 @@ header #nav-bar .logo a:hover {
   color: rgb(3, 2, 31);
 }
 header #nav-bar .logo a img {
-  height: 65px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,11 +47,11 @@ header #nav-bar .lista li {
 }
 header #nav-bar .lista li a {
   text-decoration: none;
-  color: black;
+  color: rgb(225, 225, 225);
   font-size: 1rem;
 }
 header #nav-bar .lista li a:hover {
-  color: rgb(223, 190, 3);
+  color: rgb(255, 204, 0);
 }
 header #nav-bar .action_btn {
   background-color: rgb(226, 140, 27);
