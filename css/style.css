@@ -4,8 +4,10 @@ header {
   background-color: rgb(4, 4, 39);
   position: relative;
   padding: 0 2rem;
+  background-color: transparent;
+  text-decoration: none;
 }
-header #nav-bar {
+header #navbar {
   width: 100%;
   height: 90px;
   max-width: 1200px;
@@ -14,46 +16,46 @@ header #nav-bar {
   justify-content: space-between;
   align-items: center;
 }
-header #nav-bar .logo {
+header #navbar .logo {
   display: flex;
   height: 2rem;
   width: auto;
   justify-content: center;
   align-items: center;
 }
-header #nav-bar .logo a {
+header #navbar .logo a {
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
   color: rgb(24, 22, 119);
 }
-header #nav-bar .logo a:hover {
+header #navbar .logo a:hover {
   color: rgb(3, 2, 31);
 }
-header #nav-bar .logo a img {
+header #navbar .logo a img {
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header #nav-bar .lista {
+header #navbar .lista {
   display: flex;
   gap: 2rem;
 }
-header #nav-bar .lista li {
+header #navbar .lista li {
   display: flex;
   gap: 2rem;
   list-style: none;
 }
-header #nav-bar .lista li a {
+header #navbar .lista li a {
   text-decoration: none;
   color: rgb(225, 225, 225);
   font-size: 1rem;
 }
-header #nav-bar .lista li a:hover {
+header #navbar .lista li a:hover {
   color: rgb(255, 204, 0);
 }
-header #nav-bar .action_btn {
+header #navbar .action_btn {
   background-color: rgb(226, 140, 27);
   text-decoration: none;
   color: black;
@@ -66,18 +68,68 @@ header #nav-bar .action_btn {
   cursor: pointer;
   transition: scale 0.2 ease;
 }
-header #nav-bar .action_btn:hover {
+header #navbar .action_btn:hover {
   scale: 1.08;
   color: black;
 }
-header #nav-bar .action_btn:active {
+header #navbar .action_btn:active {
   scale: 0.95;
 }
-header #nav-bar .toggle_btn {
-  color: rgb(3, 2, 31);
+header #navbar .toggle_btn {
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
+}
+header .dropdown_menu {
+  position: absolute;
+  height: 0;
+  display: none;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  list-style: none;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+header .dropdown_menu .open {
+  height: 240px;
+}
+header .dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .dropdown_menu li a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+header .dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(226, 140, 27);
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+header .dropdown_menu .action_btn:hover {
+  scale: 1.08;
+  color: black;
+}
+header .dropdown_menu .action_btn:active {
+  scale: 0.95;
 }
 
 * {
@@ -89,7 +141,26 @@ header #nav-bar .toggle_btn {
 
 body {
   height: 100vh;
+  background-image: url("/images/vinoteca.jpg");
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 992px) {
+  body #navbar .lista, body .action_btn {
+    display: none;
+  }
+  body #navbar .toggle_btn {
+    display: block;
+  }
+  body .dropdown_menu {
+    display: block;
+  }
+}
+@media (min-width: 993px) {
+  body .dropdown_menu {
+    display: none;
+  }
 }
 
 /* variables */

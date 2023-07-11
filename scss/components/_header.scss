@@ -1,11 +1,14 @@
 @import '../base/variables';
+@import '../base/estilosGenerales';
 
 header {
     background-color: $bg-color-general;
     position: relative;
     padding: 0 2rem;
+    background-color: transparent;
+    text-decoration: none;
 
-    #nav-bar {
+    #navbar {
         width: 100%;
         height: 90px;
         max-width: 1200px;
@@ -74,10 +77,60 @@ header {
             }
         }
         .toggle_btn {
-            color: rgb(3, 2, 31);
+            color: rgb(255, 255, 255);
             font-size: 1.5rem;
             cursor: pointer;
             display: none
+        }
+    }
+    .dropdown_menu {
+        position: absolute;
+        height: 0;
+        display: none;
+        right:2rem;
+        top: 60px;
+        width: 300px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        list-style: none;
+        transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        .open{
+            height: 240px;}
+
+        li {
+            padding: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                text-decoration: none;
+                color: antiquewhite;
+                }
+            }
+            .action_btn{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                background-color: rgb(226, 140, 27);
+                text-decoration: none;
+                color: black;
+                padding: 0.5rem 1rem;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: scale 0.2 ease;
+                &:hover{
+                scale: 1.08;
+                color: black;
+            }
+            &:active{
+                scale: 0.95;
+            }
         }
     }
 };
