@@ -4,7 +4,7 @@ header {
   background-color: rgb(4, 4, 39);
   position: relative;
   padding: 0 2rem;
-  background-color: transparent;
+  background-color: rgba(5, 4, 26, 0.551);
   text-decoration: none;
 }
 header #navbar {
