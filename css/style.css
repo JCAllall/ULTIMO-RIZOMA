@@ -1,10 +1,13 @@
 /* variables */
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 header {
   background-color: rgb(4, 4, 39);
   position: relative;
   padding: 0 2rem;
-  background-color: rgba(5, 4, 26, 0.551);
+  background-color: rgb(3, 8, 40);
   text-decoration: none;
 }
 header #navbar {
@@ -139,13 +142,6 @@ header .dropdown_menu .action_btn:active {
   font-family: "Lora", serif;
 }
 
-body {
-  height: 100vh;
-  background-image: url("/images/vinoteca.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 @media (max-width: 992px) {
   body #navbar .lista, body .action_btn {
     display: none;
@@ -164,5 +160,26 @@ body {
 }
 
 /* variables */
+/* variables */
+.imagen-vinoteca {
+  display: flex;
+  position: relative;
+  background-image: url("/images/vinoteca.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+.imagen-vinoteca h1 {
+  width: 100%;
+  position: absolute;
+  left: 5%;
+  bottom: 50%;
+  font-size: 65px;
+  color: rgb(255, 205, 42);
+  background-color: rgba(0, 0, 0, 0.808);
+  border-radius: 2%;
+  font-family: "Vidaloka", serif;
+}
 
 /*# sourceMappingURL=style.css.map */

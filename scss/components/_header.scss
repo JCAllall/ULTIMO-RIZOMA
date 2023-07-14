@@ -1,11 +1,12 @@
 @import '../base/variables';
 @import '../base/estilosGenerales';
+@import '../base/listas';
 
 header {
     background-color: $bg-color-general;
     position: relative;
     padding: 0 2rem;
-    background-color:rgba(5, 4, 26, 0.551);
+    background-color:rgb(3, 8, 40);
     text-decoration: none;
 
     #navbar {
