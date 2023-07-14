@@ -1,3 +1,18 @@
 @import '../base/variables';
 @import '../base/estilosGenerales';
 @import '../base/listas';
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 50px;
+    gap: 25px;
+    height: 50vh;
+    .cards {
+        .cards-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

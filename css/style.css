@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 header {
   background-color: rgb(4, 4, 39);
   position: relative;
@@ -180,6 +181,20 @@ header .dropdown_menu .action_btn:active {
   background-color: rgba(0, 0, 0, 0.808);
   border-radius: 2%;
   font-family: "Vidaloka", serif;
+}
+
+/* variables */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 50px;
+  gap: 25px;
+  height: 50vh;
+}
+#cards .cards .cards-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
