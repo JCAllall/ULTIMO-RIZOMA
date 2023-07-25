@@ -4,12 +4,10 @@
 
 .imagen-vinoteca{
     display: flex;
-    position: relative;
     background-image: url('/images/vinoteca.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60vh;
     h1{
         width: 100%;
         position: absolute;
