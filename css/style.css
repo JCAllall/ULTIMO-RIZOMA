@@ -4,16 +4,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap");
 header {
   background-color: rgb(4, 4, 39);
-  position: relative;
-  padding: 0 2rem;
-  background-color: rgb(3, 8, 40);
+  height: 8rem;
+  background-color: rgba(255, 255, 255, 0.808);
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 header #navbar {
   width: 100%;
-  height: 90px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -22,7 +26,6 @@ header #navbar {
 }
 header #navbar .logo {
   display: flex;
-  height: 2rem;
   width: auto;
   justify-content: center;
   align-items: center;
@@ -36,31 +39,36 @@ header #navbar .logo a {
 header #navbar .logo a:hover {
   color: rgb(3, 2, 31);
 }
-header #navbar .logo a img {
-  height: 60px;
+header #navbar .logo a .logo-header {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 15rem;
+  width: auto;
+  padding-top: 2rem;
 }
 header #navbar .lista {
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
 }
 header #navbar .lista li {
   display: flex;
-  gap: 2rem;
   list-style: none;
+  font-size: 1.2rem;
 }
 header #navbar .lista li a {
   text-decoration: none;
-  color: rgb(225, 225, 225);
-  font-size: 1rem;
+  color: rgb(1, 1, 27);
 }
 header #navbar .lista li a:hover {
-  color: rgb(255, 204, 0);
+  color: rgb(255, 206, 11);
+  background-color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 0.5rem;
+  transition: 0.5s;
 }
 header #navbar .action_btn {
-  background-color: rgb(226, 140, 27);
+  background-color: rgb(255, 195, 32);
   text-decoration: none;
   color: black;
   padding: 0.5rem 1rem;
@@ -136,6 +144,7 @@ header .dropdown_menu .action_btn:active {
   scale: 0.95;
 }
 
+/* variables */
 * {
   margin: 0;
   padding: 0;
@@ -195,9 +204,9 @@ header .dropdown_menu .action_btn:active {
   background-color: rgb(255, 255, 255);
   margin: 15px;
   border: 2px solid rgb(185, 185, 185);
-  -webkit-box-shadow: 0px 30px 45px -4px rgb(0, 0, 0);
-  -moz-box-shadow: 0px 30px 45px -4px rgb(0, 0, 0);
-  box-shadow: 0px 30px 45px -4px rgb(24, 22, 22);
+  -webkit-box-shadow: 0px 0px 26px 11px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 0px 26px 11px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 0px 26px 11px rgba(0, 0, 0, 0.18);
 }
 #gallery-container .div-card .cards {
   margin: 10px;
@@ -209,6 +218,53 @@ header .dropdown_menu .action_btn:active {
   text-align: center;
   margin: 10px;
   font-size: 15px;
+}
+
+/* variables */
+.footer {
+  height: 30rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.footer #footer-01 {
+  background-color: rgb(238, 238, 238);
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer #footer-01 .info-footer {
+  display: flex;
+  align-items: center;
+}
+.footer #footer-01 .info-footer a #logo-footer {
+  width: 20rem;
+  height: auto;
+}
+.footer #footer-01 .info-footer .ul-01 {
+  list-style: none;
+  padding: 0 7rem;
+  line-height: 3rem;
+}
+.footer #footer-01 .info-footer .ul-01 a {
+  text-decoration: none;
+  color: rgb(58, 54, 54);
+}
+.footer #footer-01 .info-footer .ul-02 {
+  list-style: none;
+  padding: 0 7rem;
+  line-height: 2rem;
+}
+.footer #footer-01 .info-footer .ul-02 a {
+  text-decoration: none;
+  color: rgb(58, 54, 54);
+}
+.footer #footer-02 {
+  background-color: rgb(223, 182, 1);
+  color: rgb(58, 54, 54);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

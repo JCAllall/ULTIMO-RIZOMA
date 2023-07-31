@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap');
+@import '../base/variables';
+@import '../base/estilosGenerales';
+@import '../base/listas';
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+
+// FOOTER ---
+
+.footer {
+    height: 30rem;
+    font-family: 'Cormorant Garamond', serif;
+
+    #footer-01{
+        background-color: rgb(238, 238, 238);
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       
+            .info-footer{
+                display: flex;
+                align-items: center;
+                
+                a {
+                    #logo-footer{
+                        width: 20rem;
+                        height: auto;
+                    };
+                };
+                .ul-01{
+                list-style: none;
+                padding: 0 7rem;
+                line-height: 3rem;
+                a{
+                    text-decoration: none;
+                    color: rgb(58, 54, 54);
+                };
+            };
+            
+            .ul-02{
+                list-style: none;
+                padding: 0 7rem;
+                line-height: 2rem;
+                a{
+                    text-decoration: none;
+                    color: rgb(58, 54, 54);
+                };
+            };
+
+        };
+    };
+    
+    #footer-02{
+        background-color: rgb(223, 182, 1);
+        color: rgb(58, 54, 54);
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    };
+};
