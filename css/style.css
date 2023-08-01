@@ -24,12 +24,6 @@ header #navbar {
   justify-content: space-between;
   align-items: center;
 }
-header #navbar .logo {
-  display: flex;
-  width: auto;
-  justify-content: center;
-  align-items: center;
-}
 header #navbar .logo a {
   font-size: 1.5rem;
   text-decoration: none;
@@ -43,7 +37,7 @@ header #navbar .logo a .logo-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15rem;
+  height: 7rem;
   width: auto;
   padding-top: 2rem;
 }
@@ -68,7 +62,7 @@ header #navbar .lista li a:hover {
   transition: 0.5s;
 }
 header #navbar .action_btn {
-  background-color: rgb(255, 195, 32);
+  background-color: rgb(231, 197, 0);
   text-decoration: none;
   color: black;
   padding: 0.5rem 1rem;
@@ -148,7 +142,6 @@ header .dropdown_menu .action_btn:active {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Lora", serif;
 }
 
@@ -171,32 +164,13 @@ header .dropdown_menu .action_btn:active {
 
 /* variables */
 /* variables */
-.imagen-vinoteca {
-  display: flex;
-  background-image: url("/images/vinoteca.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.imagen-vinoteca h1 {
-  width: 100%;
-  position: absolute;
-  left: 5%;
-  bottom: 50%;
-  font-size: 65px;
-  color: rgb(255, 205, 42);
-  background-color: rgba(0, 0, 0, 0.808);
-  border-radius: 2%;
-  font-family: "Vidaloka", serif;
-}
-
 /* variables */
 #gallery-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: auto;
-  gap: 5px;
-  margin: 5px;
+  grid-auto-rows: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
 }
 #gallery-container .div-card {
   height: auto;
@@ -226,7 +200,7 @@ header .dropdown_menu .action_btn:active {
   font-family: "Cormorant Garamond", serif;
 }
 .footer #footer-01 {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(255, 255, 255);
   height: 25rem;
   display: flex;
   justify-content: center;
@@ -259,7 +233,7 @@ header .dropdown_menu .action_btn:active {
   color: rgb(58, 54, 54);
 }
 .footer #footer-02 {
-  background-color: rgb(223, 182, 1);
+  background-color: rgb(209, 182, 60);
   color: rgb(58, 54, 54);
   height: 5rem;
   display: flex;

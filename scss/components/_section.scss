@@ -2,21 +2,3 @@
 @import '../base/estilosGenerales';
 @import '../base/listas';
 
-.imagen-vinoteca{
-    display: flex;
-    background-image: url('/images/vinoteca.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    h1{
-        width: 100%;
-        position: absolute;
-        left: 5%;
-        bottom: 50%;
-        font-size: 65px;
-        color: rgb(255, 205, 42);
-        background-color: rgba(0, 0, 0, 0.808);
-        border-radius: 2%;
-        font-family: 'Vidaloka', serif;
-    };
-}

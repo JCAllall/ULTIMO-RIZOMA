@@ -18,10 +18,6 @@ header {
         justify-content: space-between;
         align-items: center;
         .logo{
-            display: flex;
-            width: auto;
-            justify-content: center;
-            align-items: center;
             a{
                 font-size: 1.5rem;
                 text-decoration: none;
@@ -34,7 +30,7 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    height: 15rem;
+                    height: 7rem;
                     width: auto;
                     padding-top: 2rem;
                 }
@@ -62,7 +58,7 @@ header {
             }
         }
         .action_btn {
-            background-color: rgb(255, 195, 32);
+            background-color: rgb(231, 197, 0);
             text-decoration: none;
             color: black;
             padding: 0.5rem 1rem;
