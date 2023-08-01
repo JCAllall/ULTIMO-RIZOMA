@@ -59,10 +59,13 @@ header #navbar .lista li a:hover {
   background-color: rgb(0, 0, 0);
   padding: 5px;
   border-radius: 0.5rem;
-  transition: 0.5s;
+  transition: 0.45s;
+}
+header #navbar a .img-cart {
+  height: 1.5rem;
 }
 header #navbar .action_btn {
-  background-color: rgb(231, 197, 0);
+  background-color: rgb(255, 217, 1);
   text-decoration: none;
   color: black;
   padding: 0.5rem 1rem;
@@ -75,7 +78,7 @@ header #navbar .action_btn {
   transition: scale 0.2 ease;
 }
 header #navbar .action_btn:hover {
-  scale: 1.08;
+  scale: 1.1;
   color: black;
 }
 header #navbar .action_btn:active {
@@ -221,7 +224,7 @@ header .dropdown_menu .action_btn:active {
 }
 .footer #footer-01 .info-footer .ul-01 a {
   text-decoration: none;
-  color: rgb(58, 54, 54);
+  color: rgb(0, 0, 0);
 }
 .footer #footer-01 .info-footer .ul-02 {
   list-style: none;
@@ -230,7 +233,7 @@ header .dropdown_menu .action_btn:active {
 }
 .footer #footer-01 .info-footer .ul-02 a {
   text-decoration: none;
-  color: rgb(58, 54, 54);
+  color: rgb(0, 0, 0);
 }
 .footer #footer-02 {
   background-color: rgb(209, 182, 60);
