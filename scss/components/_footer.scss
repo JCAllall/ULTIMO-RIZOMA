@@ -10,53 +10,76 @@
     height: 30rem;
     font-family: 'Cormorant Garamond', serif;
 
-    #footer-01{
+    #footer-01 {
         background-color: rgb(255, 255, 255);
         height: 25rem;
         display: flex;
         justify-content: center;
         align-items: center;
 
-       
-            .info-footer{
-                display: flex;
-                align-items: center;
-                
-                a {
-                    #logo-footer{
-                        width: 20rem;
-                        height: auto;
-                    };
-                };
-                .ul-01{
+
+        .info-footer {
+            display: flex;
+            align-items: center;
+
+            a {
+                #logo-footer {
+                    width: 20rem;
+                    height: auto;
+                }
+
+                ;
+            }
+
+            ;
+
+            .ul-01 {
                 list-style: none;
                 padding: 0 7rem;
                 line-height: 3rem;
-                a{
+
+                a {
                     text-decoration: none;
                     color: rgb(0, 0, 0);
-                };
-            };
-            
-            .ul-02{
+                }
+
+                ;
+            }
+
+            ;
+
+            .ul-02 {
                 list-style: none;
                 padding: 0 7rem;
                 line-height: 2rem;
-                a{
+
+                a {
                     text-decoration: none;
                     color: rgb(0, 0, 0);
-                };
-            };
+                }
 
-        };
-    };
-    
-    #footer-02{
+                ;
+            }
+
+            ;
+
+        }
+
+        ;
+    }
+
+    ;
+
+    #footer-02 {
         background-color: rgb(209, 182, 60);
         color: rgb(58, 54, 54);
         height: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
-    };
-};
+    }
+
+    ;
+}
+
+;

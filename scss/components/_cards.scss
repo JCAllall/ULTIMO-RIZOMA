@@ -12,26 +12,28 @@
     margin: 1rem;
 
     // ---------------  DIV  ----------------
-        .div-card {
-            height: auto;
-            text-align: center;
-            background-color: rgb(255, 255, 255);
-            margin: 15px;
-            border: 2px solid rgb(185, 185, 185);
-            -webkit-box-shadow: 0px 0px 26px 11px rgba(0,0,0,0.18);
-            -moz-box-shadow: 0px 0px 26px 11px rgba(0,0,0,0.18);
-            box-shadow: 0px 0px 26px 11px rgba(0,0,0,0.18);
-            .cards{
-                margin: 10px;
-                width: auto;
-                height: 240px;
-                border-radius: 8px;
-            }
-            h3 {
-                text-align: center;
-                margin: 10px;
-                font-size: 15px;
-            }
+    .div-card {
+        height: auto;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        margin: 15px;
+        border: 2px solid rgb(185, 185, 185);
+        -webkit-box-shadow: 0px 0px 26px 11px rgba(0, 0, 0, 0.18);
+        -moz-box-shadow: 0px 0px 26px 11px rgba(0, 0, 0, 0.18);
+        box-shadow: 0px 0px 26px 11px rgba(0, 0, 0, 0.18);
+
+        .cards {
+            margin: 10px;
+            width: auto;
+            height: 240px;
+            border-radius: 8px;
         }
-    
+
+        h3 {
+            text-align: center;
+            margin: 10px;
+            font-size: 15px;
+        }
+    }
+
 }

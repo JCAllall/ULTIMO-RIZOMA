@@ -5,7 +5,7 @@
 header {
     background-color: $bg-color-general;
     height: 8rem;
-    background-color:rgba(255, 255, 255, 0.808);
+    background-color: rgba(255, 255, 255, 0.808);
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -17,16 +17,19 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .logo{
-            a{
+
+        .logo {
+            a {
                 font-size: 1.5rem;
                 text-decoration: none;
                 font-weight: bold;
                 color: rgb(24, 22, 119);
-                &:hover{
+
+                &:hover {
                     color: rgb(3, 2, 31);
                 }
-                .logo-header{
+
+                .logo-header {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -34,34 +37,50 @@ header {
                     width: auto;
                     padding-top: 2rem;
                 }
-                    
+
             }
         }
-        .lista{
+
+        .lista {
             display: flex;
             gap: 5rem;
-            li{
+
+            li {
                 display: flex;
                 list-style: none;
                 font-size: 1.2rem;
+
                 a {
                     text-decoration: none;
                     color: rgb(1, 1, 27);
+
                     &:hover {
                         color: rgb(255, 206, 11);
                         background-color: rgb(0, 0, 0);
                         padding: 5px;
                         border-radius: 0.5rem;
                         transition: .45s;
-                    };
-                };
-            };
-        };
-        a{
-            .img-cart{
+                    }
+
+                    ;
+                }
+
+                ;
+            }
+
+            ;
+        }
+
+        ;
+
+        a {
+            .img-cart {
                 height: 1.5rem;
             }
-        };
+        }
+
+        ;
+
         .action_btn {
             background-color: rgb(255, 217, 1);
             text-decoration: none;
@@ -74,14 +93,17 @@ header {
             font-weight: bold;
             cursor: pointer;
             transition: scale 0.2 ease;
-            &:hover{
+
+            &:hover {
                 scale: 1.10;
                 color: black;
             }
-            &:active{
+
+            &:active {
                 scale: 0.95;
             }
         }
+
         .toggle_btn {
             color: rgb(255, 255, 255);
             font-size: 1.5rem;
@@ -89,11 +111,12 @@ header {
             display: none
         }
     }
+
     .dropdown_menu {
         position: absolute;
         height: 0;
         display: none;
-        right:2rem;
+        right: 2rem;
         top: 60px;
         width: 300px;
         background: rgba(255, 255, 255, 0.1);
@@ -102,41 +125,49 @@ header {
         overflow: hidden;
         list-style: none;
         transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        .open{
-            height: 240px;}
+
+        .open {
+            height: 240px;
+        }
 
         li {
             padding: 0.7rem;
             display: flex;
             align-items: center;
             justify-content: center;
+
             a {
                 text-decoration: none;
                 color: antiquewhite;
-                }
             }
-            .action_btn{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                background-color: rgb(226, 140, 27);
-                text-decoration: none;
-                color: black;
-                padding: 0.5rem 1rem;
-                border: none;
-                outline: none;
-                border-radius: 20px;
-                font-size: 0.8rem;
-                font-weight: bold;
-                cursor: pointer;
-                transition: scale 0.2 ease;
-                &:hover{
+        }
+
+        .action_btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(226, 140, 27);
+            text-decoration: none;
+            color: black;
+            padding: 0.5rem 1rem;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: scale 0.2 ease;
+
+            &:hover {
                 scale: 1.08;
                 color: black;
             }
-            &:active{
+
+            &:active {
                 scale: 0.95;
             }
         }
     }
-};
+}
+
+;
