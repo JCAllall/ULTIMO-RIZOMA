@@ -1,15 +1,21 @@
 /* variables */
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap");
 header {
-  background-color: rgb(4, 4, 39);
+  background-color: rgb(1, 1, 26);
   height: 8rem;
   background-color: rgba(255, 255, 255, 0.808);
   text-decoration: none;
@@ -149,7 +155,8 @@ header .dropdown_menu .action_btn:active {
 }
 
 @media (max-width: 992px) {
-  body #navbar .lista, body .action_btn {
+  body #navbar .lista,
+  body .action_btn {
     display: none;
   }
   body #navbar .toggle_btn {
