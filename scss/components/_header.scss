@@ -60,16 +60,34 @@ header {
                         padding: 5px;
                         border-radius: 0.5rem;
                         transition: .45s;
-                    }
-
-                    ;
-                }
-
-                ;
+                    };
+                };
+                .submenu {
+                    &:hover {
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            top: 100%;
+                            z-index: 1;
+                            background-color: white;
+                            padding: 20px;
+                            min-height: 400px;
+                            min-width: 300px;
+                        };
+                        #carrito{
+                            display: none;
+                    };
+                };
             }
 
             ;
+
+            
+
+            ;
         }
+
+        ;
 
         ;
 

@@ -67,6 +67,20 @@ header #navbar .lista li a:hover {
   border-radius: 0.5rem;
   transition: 0.45s;
 }
+header #navbar .lista li .submenu:hover {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+header #navbar .lista li .submenu #carrito {
+  display: none;
+}
 header #navbar a .img-cart {
   height: 1.5rem;
 }
