@@ -243,8 +243,8 @@ header .dropdown_menu .action_btn:active {
   color: rgb(0, 0, 0);
 }
 .footer #footer-02 {
-  background-color: rgb(209, 182, 60);
-  color: rgb(58, 54, 54);
+  background-color: rgb(3, 3, 24);
+  color: rgb(255, 217, 0);
   height: 5rem;
   display: flex;
   justify-content: center;
