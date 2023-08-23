@@ -2,7 +2,7 @@
 @import '../base/estilosGenerales';
 @import '../base/listas';
 
-header {
+.header {
     background-color: $bg-color-general;
     height: 8rem;
     background-color: rgba(255, 255, 255, 0.808);
@@ -33,7 +33,7 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    height: 7rem;
+                    height: 6rem;
                     width: auto;
                     padding-top: 2rem;
                 }
@@ -60,29 +60,41 @@ header {
                         padding: 5px;
                         border-radius: 0.5rem;
                         transition: .45s;
-                    };
-                };
+                    }
+
+                    ;
+                }
+
+                ;
+
                 .submenu {
                     &:hover {
-                            display: block;
-                            position: absolute;
-                            right: 0;
-                            top: 100%;
-                            z-index: 1;
-                            background-color: white;
-                            padding: 20px;
-                            min-height: 400px;
-                            min-width: 300px;
-                        };
-                        #carrito{
-                            display: none;
-                    };
-                };
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 100%;
+                        z-index: 1;
+                        background-color: white;
+                        padding: 20px;
+                        min-height: 400px;
+                        min-width: 300px;
+                    }
+
+                    ;
+
+                    #carrito {
+                        display: none;
+                    }
+
+                    ;
+                }
+
+                ;
             }
 
             ;
 
-            
+
 
             ;
         }

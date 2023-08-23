@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap');
+@import '../base/variables';
+@import '../base/estilosGenerales';
+@import '../base/listas';
+
+// Beneficios
+
+.beneficios{
+    height: 3rem;
+    width: auto;
+    background-color: rgba(122, 122, 122, 0.26);
+    font-size: 2rem;
+    margin: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        margin:5px 40px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

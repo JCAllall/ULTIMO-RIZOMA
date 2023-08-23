@@ -34,6 +34,13 @@
             margin: 10px;
             font-size: 15px;
         }
+        button{
+            margin: 1rem 1rem;
+            background-color: $bg-button;
+            border: 3px solid rgb(3, 3, 3);
+            border-radius: 10%;
+            padding: 0.3rem 0.3rem;
+        }
     }
 
 }
