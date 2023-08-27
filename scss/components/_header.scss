@@ -41,20 +41,8 @@
 
     .lista {
       display: flex;
-      gap: 35px;
-      align-items: center;
       justify-content: space-around;
-      width: auto;
-
-      #submenu {
-        width: 25%;
-        .submenu {
-          position: absolute;
-          #carrito {
-            display: none;
-          }
-        }
-      }
+      width: 1100px;
 
       li {
         display: inline-block;
@@ -69,10 +57,31 @@
           &:hover {
             color: rgb(255, 206, 11);
             background-color: rgb(0, 0, 0);
-            padding: 5px;
             border-radius: 0.5rem;
             transition: 0.45s;
           }
+        }
+      }
+    }
+
+    #submenu {
+      position: relative;
+      &:hover {
+        display: block;
+        position: absolute;
+        top: 100%;
+        z-index: 1;
+        background-color: white;
+        padding: 20px;
+        min-height: 400px;
+        min-width: 300px;
+      }
+      .submenu {
+        position: absolute;
+        display: none;
+
+        #carrito {
+          display: block;
         }
       }
     }
