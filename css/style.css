@@ -37,8 +37,11 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+.header #navbar .logo {
+  margin-right: 200px;
 }
 .header #navbar .logo a {
   font-size: 1.5rem;
@@ -51,20 +54,32 @@
 }
 .header #navbar .logo a .logo-header {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 6rem;
+  align-items: start;
+  justify-content: start;
+  height: 85px;
   width: auto;
-  padding-top: 2rem;
 }
 .header #navbar .lista {
   display: flex;
-  gap: 5rem;
+  gap: 35px;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+}
+.header #navbar .lista #submenu {
+  width: 25%;
+}
+.header #navbar .lista #submenu .submenu {
+  position: absolute;
+}
+.header #navbar .lista #submenu .submenu #carrito {
+  display: none;
 }
 .header #navbar .lista li {
-  display: flex;
+  display: inline-block;
   list-style: none;
   font-size: 1.2rem;
+  position: relative;
 }
 .header #navbar .lista li a {
   text-decoration: none;
@@ -76,20 +91,6 @@
   padding: 5px;
   border-radius: 0.5rem;
   transition: 0.45s;
-}
-.header #navbar .lista li .submenu:hover {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  z-index: 1;
-  background-color: white;
-  padding: 20px;
-  min-height: 400px;
-  min-width: 300px;
-}
-.header #navbar .lista li .submenu #carrito {
-  display: none;
 }
 .header #navbar a .img-cart {
   height: 1.5rem;

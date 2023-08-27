@@ -1,118 +1,86 @@
-@import '../base/variables';
-@import '../base/listas';
+@import "../base/variables";
+@import "../base/listas";
 
 .header {
-    background-color: $bg-color-general;
-    height: 8rem;
-    background-color: rgba(255, 255, 255, 0.808);
-    text-decoration: none;
+  background-color: $bg-color-general;
+  height: 8rem;
+  background-color: rgba(255, 255, 255, 0.808);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+
+  #navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    #navbar {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .logo {
+      margin-right: 200px;
+      a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(24, 22, 119);
 
-        .logo {
-            a {
-                font-size: 1.5rem;
-                text-decoration: none;
-                font-weight: bold;
-                color: rgb(24, 22, 119);
-
-                &:hover {
-                    color: rgb(3, 2, 31);
-                }
-
-                .logo-header {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 6rem;
-                    width: auto;
-                    padding-top: 2rem;
-                }
-
-            }
+        &:hover {
+          color: rgb(3, 2, 31);
         }
 
-        .lista {
-            display: flex;
-            gap: 5rem;
-
-            li {
-                display: flex;
-                list-style: none;
-                font-size: 1.2rem;
-
-                a {
-                    text-decoration: none;
-                    color: rgb(1, 1, 27);
-
-                    &:hover {
-                        color: rgb(255, 206, 11);
-                        background-color: rgb(0, 0, 0);
-                        padding: 5px;
-                        border-radius: 0.5rem;
-                        transition: .45s;
-                    }
-
-                    ;
-                }
-
-                ;
-
-                .submenu {
-                    &:hover {
-                        display: block;
-                        position: absolute;
-                        right: 0;
-                        top: 100%;
-                        z-index: 1;
-                        background-color: white;
-                        padding: 20px;
-                        min-height: 400px;
-                        min-width: 300px;
-                    }
-
-                    ;
-
-                    #carrito {
-                        display: none;
-                    }
-
-                    ;
-                }
-
-                ;
-            }
-
-            ;
-
-
-
-            ;
+        .logo-header {
+          display: flex;
+          align-items: start;
+          justify-content: start;
+          height: 85px;
+          width: auto;
         }
+      }
+    }
 
-        ;
+    .lista {
+      display: flex;
+      gap: 35px;
+      align-items: center;
+      justify-content: space-around;
+      width: auto;
 
-        ;
+      #submenu {
+        width: 25%;
+        .submenu {
+          position: absolute;
+          #carrito {
+            display: none;
+          }
+        }
+      }
+
+      li {
+        display: inline-block;
+        list-style: none;
+        font-size: 1.2rem;
+        position: relative;
 
         a {
-            .img-cart {
-                height: 1.5rem;
-            }
+          text-decoration: none;
+          color: rgb(1, 1, 27);
+
+          &:hover {
+            color: rgb(255, 206, 11);
+            background-color: rgb(0, 0, 0);
+            padding: 5px;
+            border-radius: 0.5rem;
+            transition: 0.45s;
+          }
         }
-
-        ;
-
-
-
+      }
     }
-}
 
-;
+    a {
+      .img-cart {
+        height: 1.5rem;
+      }
+    }
+  }
+}
