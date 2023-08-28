@@ -79,10 +79,19 @@
   border-radius: 2px;
 }
 .header #navbar .lista #submenu {
+  display: inline-block;
   position: relative;
 }
-.header #navbar .lista #submenu #imagen-carrito {
-  position: relative;
+.header #navbar .lista #submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
 }
 .header #navbar .lista #submenu .submenu {
   position: absolute;
