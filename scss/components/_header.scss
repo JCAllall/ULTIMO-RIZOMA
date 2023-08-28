@@ -7,7 +7,7 @@
   background-color: rgba(255, 255, 255, 0.808);
   text-decoration: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   #navbar {
     width: 100%;
@@ -20,15 +20,6 @@
     .logo {
       margin-right: 200px;
       a {
-        font-size: 1.5rem;
-        text-decoration: none;
-        font-weight: bold;
-        color: rgb(24, 22, 119);
-
-        &:hover {
-          color: rgb(3, 2, 31);
-        }
-
         .logo-header {
           display: flex;
           align-items: start;
@@ -41,54 +32,49 @@
 
     .lista {
       display: flex;
-      justify-content: space-around;
-      width: 1100px;
+      justify-content: space-between;
+      width: 1200px;
 
       li {
         display: inline-block;
+        position: relative;
         list-style: none;
         font-size: 1.2rem;
         position: relative;
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.08);
+        }
 
         a {
+          height: 20px;
           text-decoration: none;
           color: rgb(1, 1, 27);
+          transition: all 0.5s;
 
           &:hover {
-            color: rgb(255, 206, 11);
-            background-color: rgb(0, 0, 0);
-            border-radius: 0.5rem;
-            transition: 0.45s;
+            padding: 4.5px 6px;
+            color: rgb(255, 196, 0);
+            background-color: rgba(0, 5, 49, 0.788);
+            border-radius: 2px;
           }
         }
       }
-    }
+      #submenu {
+        position: relative;
 
-    #submenu {
-      position: relative;
-      &:hover {
-        display: block;
-        position: absolute;
-        top: 100%;
-        z-index: 1;
-        background-color: white;
-        padding: 20px;
-        min-height: 400px;
-        min-width: 300px;
-      }
-      .submenu {
-        position: absolute;
-        display: none;
-
-        #carrito {
-          display: block;
+        #imagen-carrito {
+          position: relative;
         }
-      }
-    }
 
-    a {
-      .img-cart {
-        height: 1.5rem;
+        .submenu {
+          position: absolute;
+          display: none;
+
+          #carrito {
+            display: block;
+          }
+        }
       }
     }
   }
