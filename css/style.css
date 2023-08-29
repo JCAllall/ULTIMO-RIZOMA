@@ -1,36 +1,43 @@
 /* variables */
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 .header {
   background-color: rgb(1, 1, 26);
   height: 8rem;
@@ -65,28 +72,70 @@
 .header #navbar .lista #submenu {
   position: relative;
 }
+.header #navbar .lista #submenu #img-carrito:hover {
+  padding: 5px;
+  border-radius: 10%;
+  background-color: rgb(255, 217, 3);
+  transition: all 0.45s;
+}
 .header #navbar .lista #submenu #carrito {
   display: none;
+  width: 300px;
 }
 .header #navbar .lista #submenu #carrito #lista-carrito {
   position: relative;
-  margin-top: 0;
-  font-size: 20px;
-  border: 2px solid rgb(3, 16, 71);
-  height: 350px;
-  width: 300px;
-  font-size: 15px;
-  font-family: "Playfair Display", serif;
-}
-.header #navbar .lista #submenu #carrito .vaciar-carrito {
-  color: rgba(7, 16, 90, 0.692);
-  height: 35px;
-  margin-top: 10px;
   width: 100%;
-  border: 2px solid rgba(0, 11, 56, 0.548);
-  background-color: rgb(255, 255, 255);
+}
+.header #navbar .lista #submenu #carrito #lista-carrito thead {
+  font-size: 12.5px;
+}
+.header #navbar .lista #submenu #carrito #lista-carrito thead tr {
+  text-align: center;
+}
+.header #navbar .lista #submenu #carrito #lista-carrito thead tr th {
+  font-family: "Poppins", sans-serif;
+}
+.header #navbar .lista #submenu #carrito hr {
+  margin-top: 20px;
+  background-color: rgb(87, 87, 87);
+}
+.header #navbar .lista #submenu #carrito .btn-carrito {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header #navbar .lista #submenu #carrito .btn-carrito .vaciar-carrito {
+  text-align: center;
+  width: 120px;
+  padding: 0 5px;
+  position: relative;
+  height: 45px;
+  margin-top: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(4, 6, 41);
+  background-color: rgb(255, 208, 0);
   letter-spacing: 1px;
-  font-size: 12px;
+  border-radius: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 12.5px;
+}
+.header #navbar .lista #submenu #carrito .btn-carrito li .btn-ver-cart .ver-carrito {
+  text-align: center;
+  width: 120px;
+  font-size: 20px;
+  padding: 0 5px;
+  position: relative;
+  height: 45px;
+  margin-top: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(4, 6, 41);
+  background-color: rgb(255, 208, 0);
+  letter-spacing: 1px;
+  border-radius: 2px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 12.5px;
 }
 .header #navbar .lista #submenu:hover #carrito {
   display: block;
@@ -96,9 +145,8 @@
   z-index: 1;
   background-color: white;
   padding: 20px;
-  min-height: 400px;
-  min-width: 300px;
-  border: 1px solid black;
+  min-height: 220px;
+  min-width: 350px;
 }
 .header #navbar .lista li {
   display: inline-block;
@@ -120,7 +168,7 @@
 .header #navbar .lista li a:hover {
   padding: 4.5px 6px;
   color: rgb(3, 3, 3);
-  background-color: rgb(255, 145, 0);
+  background-color: rgba(255, 145, 0, 0.644);
   border-radius: 2px;
 }
 
