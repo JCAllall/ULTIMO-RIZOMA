@@ -15,10 +15,10 @@
         <div id="navbar">
             <div class="logo"><a href="index.html"><img src="images/LOGO RIZOMA AZUL COMBINADO (1).png" alt="" class="logo-header"></a></div>
             <ul class="lista">
-                <li><a href="club.html">RIZOMA CLUB</a></li>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="catas.html">CATAS</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="club.html" class="links-nav">RIZOMA CLUB</a></li>
+                <li><a href="shop.html" class="links-nav">SHOP</a></li>
+                <li><a href="catas.html" class="links-nav">CATAS</a></li>
+                <li><a href="nosotros.html" class="links-nav">NOSOTROS</a></li>
                 <li id="submenu">
                     <img src="/images/cart.png" id="img-carrito" alt="CARRITO">
                     <div id="carrito">
@@ -32,18 +32,14 @@
                                     <th></th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
 
-                                    </td>
-                                </tr>
-                            </tbody>
+                            <tbody></tbody>
+
                         </table>
                         <hr>
                         <ul class="btn-carrito">
-                            <li><button class="vaciar-carrito">Vaciar carrito</button></li>
-                            <li><a href="#" class="btn-ver-cart"><button class="ver-carrito">Ver Carrito</button></a></li>
+                            <li><a href="#"><button id="vaciar-carrito">Vaciar carrito</button></a></li>
+                            <li><a href="#" class="btn-ver-cart"><button class="ver-carrito">Ver carrito</button></a></li>
                         </ul>
                     </div>
                 </li>
@@ -59,7 +55,7 @@
     </div>
 
     <!-- section cards -->
-    <section id="gallery-container">
+    <section id="lista-productos">
         <div class="div-card">
             <img src="images/ANGELICA-ZAPATA-MALBEC.jpg" alt="" class="cards">
             <h5>Vinos</h5>
@@ -82,7 +78,7 @@
             <img src="images/ANGELICA-ZAPATA-MALBEC.jpg" alt="" class="cards">
             <h5>Vinos</h5>
             <h3>Angelica Zapata Malbec</h3>
-            <button>AGREGAR AL CARRITO</button>
+            <button id="btn-agregar">AGREGAR AL CARRITO</button>
         </div>
 
         <div class="div-card">
@@ -170,6 +166,8 @@
         </div>
     </footer>
 
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>

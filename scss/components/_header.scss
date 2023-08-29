@@ -69,21 +69,26 @@
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            .vaciar-carrito {
+            #vaciar-carrito {
               text-align: center;
               width: 120px;
               padding: 0 5px;
               position: relative;
-              height: 45px;
+              height: 40px;
               margin-top: 10px;
               border: 1px solid rgb(255, 255, 255);
-              color: rgb(4, 6, 41);
-              background-color: rgb(255, 208, 0);
-              letter-spacing: 1px;
+              color: bisque;
+              background-color: $bg-button;
+              letter-spacing: 2px;
               border-radius: 2px;
               font-family: 'Playfair Display', serif;
               font-weight: 700;
               font-size: 12.5px;
+              &:hover{
+                transform: scale(1.088);
+                background-color: rgb(255, 208, 0);
+                color: black;
+              }
             }
             li{
               .btn-ver-cart{
@@ -93,16 +98,21 @@
                   font-size: 20px ;
                   padding: 0 5px;
                   position: relative;
-                  height: 45px;
+                  height: 40px;
                   margin-top: 10px;
                   border: 1px solid rgb(255, 255, 255);
-                  color: rgb(4, 6, 41);
-                  background-color: rgb(255, 208, 0);
-                  letter-spacing: 1px;
+                  color: bisque;
+                  background-color: $bg-button;
+                  letter-spacing: 2px;
                   border-radius: 2px;
                   font-family: 'Playfair Display', serif;
                   font-weight: 700;
                   font-size: 12.5px;
+                  &:hover{
+                    transform: scale(1.088);
+                    background-color: rgb(255, 208, 0);
+                    color: black;
+                  }
                 }
               }
             }
@@ -130,12 +140,12 @@
         list-style: none;
         font-size: 1.2rem;
         position: relative;
-        transition: all 0.5s;
+        transition: all 0.45s;
         &:hover {
-          transform: scale(1.08);
+          transform: scale(1.09);
         }
 
-        a {
+        .links-nav {
           height: 20px;
           text-decoration: none;
           color: rgb(1, 1, 27);
@@ -143,8 +153,8 @@
           &:hover {
             padding: 4.5px 6px;
             color: rgb(3, 3, 3);
-            background-color: rgba(255, 145, 0, 0.644);
-            border-radius: 2px;
+            background-color: rgba(255, 153, 0, 0.993);
+            border-radius: 2.5px;
           }
         }
       }
