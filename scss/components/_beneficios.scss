@@ -5,13 +5,14 @@
 // Beneficios
 
 .beneficios{
-    height: 3rem;
-    width: auto;
-    background-color: rgba(122, 122, 122, 0.26);
-    font-size: 2rem;
+    height: 55px;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(4,8,43,0.4682247899159664) 100%);
+    font-size: 35px;
     margin: 10px 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     p{
         margin:5px 40px;
