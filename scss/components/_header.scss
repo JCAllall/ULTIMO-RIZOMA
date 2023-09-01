@@ -32,9 +32,9 @@
 
     .lista {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       width: 1200px;
-      
+
       #submenu {
         position: relative;
         #img-carrito {
@@ -49,16 +49,19 @@
           display: none;
           width: auto;
           height: auto;
-          background: rgb(255,255,255);
+          background: rgb(255, 255, 255);
           #lista-carrito {
             width: 550px;
             text-align: center;
             padding: 1px;
             font-size: 22px;
-            font-family: 'Poppins', sans-serif;
-            thead{
-              tr{
-                th{
+            font-family: "Poppins", sans-serif;
+            border-collapse: collapse;
+            border-spacing: 0;
+
+            thead {
+              tr {
+                th {
                 }
                 .borrar-producto {
                   background-color: rgb(255, 0, 0);
@@ -70,22 +73,27 @@
                 }
               }
             }
-            tbody{
+            tbody {
               font-size: 19px;
+              td {
+                padding: 12px 15px;
+                text-align: left;
+                border-bottom: 1px solid #e1e1e1;
+              }
             }
           }
           hr {
             margin-top: 20px;
             background-color: rgb(87, 87, 87);
           }
-          .btn-carrito{
+          .btn-carrito {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             .vaciar-carrito {
               text-align: center;
               width: 160px;
-              font-size: 20px ;
+              font-size: 20px;
               padding: 0 5px;
               position: relative;
               height: 60px;
@@ -95,21 +103,21 @@
               background-color: $bg-button;
               letter-spacing: 3px;
               border-radius: 2px;
-              font-family: 'Playfair Display', serif;
+              font-family: "Playfair Display", serif;
               font-weight: 600;
               font-size: 18px;
-              &:hover{
+              &:hover {
                 transform: scale(1.088);
                 background-color: rgb(255, 208, 0);
                 color: black;
               }
             }
-            li{
-              .btn-ver-cart{
-                .ver-carrito{
+            li {
+              .btn-ver-cart {
+                .ver-carrito {
                   text-align: center;
                   width: 160px;
-                  font-size: 20px ;
+                  font-size: 20px;
                   padding: 0 5px;
                   position: relative;
                   height: 60px;
@@ -119,10 +127,10 @@
                   background-color: $bg-button;
                   letter-spacing: 3px;
                   border-radius: 2px;
-                  font-family: 'Playfair Display', serif;
+                  font-family: "Playfair Display", serif;
                   font-weight: 600;
                   font-size: 18px;
-                  &:hover{
+                  &:hover {
                     transform: scale(1.088);
                     background-color: rgb(255, 208, 0);
                     color: black;
@@ -131,7 +139,6 @@
               }
             }
           }
-          
         }
         &:hover {
           #carrito {
@@ -152,7 +159,7 @@
         display: inline-block;
         position: relative;
         list-style: none;
-        font-size: 23px;
+        font-size: 20px;
         position: relative;
         transition: all 0.45s;
         &:hover {

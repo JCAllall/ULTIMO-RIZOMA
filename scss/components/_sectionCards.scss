@@ -7,14 +7,12 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: 1fr 1fr;
-  gap: 5px;
-  margin: 2px;
 
   // ---------------  DIV  ----------------
   .div-card {
-    height: 390px;
+    height: 380px;
     text-align: center;
-    width: 300px;
+    width: 235px;
     background-color: rgb(255, 255, 255);
     margin: 10px;
     padding: 0;
@@ -23,7 +21,11 @@
     -moz-box-shadow: 0px 0px 26px 11px rgba(0, 0, 0, 0.18);
     box-shadow: 0px 0px 26px 11px rgba(0, 0, 0, 0.18);
 
-    .img-card{
+    @media (min-width: 550px) {
+      text-align: center;
+    }
+
+    .img-card {
       margin: 10px;
       width: auto;
       height: 220px;
@@ -33,34 +35,41 @@
     h3 {
       text-align: center;
       margin: 10px;
-      font-size: 23px;
+      font-size: 18px;
     }
-    
-    .precio{
-      text-decoration: line-through;
-      font-size: 20px;
+
+    .precio {
+      text-align: center;
+      font-size: 15px;
       margin-top: 10px;
-    .precio-oferta{
+      text-decoration: line-through;
+      @media (min-width: 550px) {
+        display: inline-block;
+        margin-right: 0;
+      }
+    }
+    .precio-oferta {
+      text-align: center;
       font-weight: 700;
-      font-size: 26px;
+      font-size: 23px;
       margin-left: 15px;
+      border: 2px solid rgb(255, 208, 0);
+      border-radius: 9px;
+      padding: 5px;
     }
-    }
-    
+
     .btn-agregar {
       display: inline-block;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      margin-top: 12px;
       background-color: $bg-button;
       border: 1px solid rgb(255, 255, 255);
       color: bisque;
       border-radius: 3px;
-      padding: 7px 0;
-      height: auto;
+      padding: 5px;
+      height: 15px;
       width: 200px;
       transition: all 0.45s;
-      margin-top: 10px;
+      padding-bottom: 10px;
       cursor: pointer;
       &:hover {
         transform: scale(1.075);
@@ -68,6 +77,5 @@
         color: black;
       }
     }
-
   }
 }

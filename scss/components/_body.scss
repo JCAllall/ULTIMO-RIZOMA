@@ -1,33 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap');
-@import '../base/variables';
-@import '../base/listas';
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
+@import "../base/variables";
+@import "../base/listas";
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
 }
 
 body {
-    @media (max-width: 992px) {
-
-        #navbar .lista,
-        .action_btn {
-            display: none;
-        }
-
-        #navbar .toggle_btn {
-            display: block;
-        }
-
-        .dropdown_menu {
-            display: block;
-        }
+  @media (max-width: 992px) {
+    #navbar .lista,
+    .action_btn {
+      display: none;
     }
 
-    @media (min-width: 993px) {
-        .dropdown_menu {
-            display: none;
-        }
+    #navbar .toggle_btn {
+      display: block;
     }
+
+    .dropdown_menu {
+      display: block;
+    }
+  }
+
+  @media (min-width: 993px) {
+    .dropdown_menu {
+      display: none;
+    }
+  }
 }

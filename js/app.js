@@ -36,17 +36,18 @@ function leerDatosProducto(producto) {
   const infoProducto = {
     imagen: producto.querySelector("img").src,
     titulo: producto.querySelector("h3").textContent,
-    precio: producto.querySelector(".precio span").textContent,
+    precio: producto.querySelector(".precio").textContent,
     id: producto.querySelector("a").getAttribute("data-id"),
     cantidad: 1,
   };
 
-
   // Revisa si un elemento ya existe
-  const existe = articulosCarrito.some( producto => producto.id === infoProducto.id);
+  const existe = articulosCarrito.some(
+    (producto) => producto.id === infoProducto.id
+  );
   if (existe) {
     // Actualizamos la cantidad
-    const productos = articulosCarrito.map( producto => {
+    const productos = articulosCarrito.map((producto) => {
       if (producto.id === infoProducto.id) {
         producto.cantidad++;
         return producto; // retorna el objeto actualizado
@@ -85,8 +86,8 @@ function eliminarProducto(e) {
 function carritoHTML() {
   vaciarCarrito();
 
-  articulosCarrito.forEach( producto => {
-    const {imagen, titulo, precio, cantidad, id } = producto;
+  articulosCarrito.forEach((producto) => {
+    const { imagen, titulo, precio, cantidad, id } = producto;
     const row = document.createElement("tr");
     row.innerHTML = `
                <td><img src="${imagen}" width=100></td>

@@ -1,22 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap');
-@import '../base/variables';
-@import '../base/listas';
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=PT+Serif&display=swap");
+@import "../base/variables";
+@import "../base/listas";
 
 // Beneficios
 
-.beneficios{
-    height: 55px;
-    width: 100%;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(4,8,43,0.4682247899159664) 100%);
-    font-size: 35px;
-    margin: 10px 15px;
+.beneficios {
+  height: 55px;
+  width: 1880px;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(4, 8, 43, 0.4682247899159664) 100%
+  );
+  font-size: 35px;
+  margin: 10px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    margin: 5px 40px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    p{
-        margin:5px 40px;
-        display: flex;
-        justify-content: space-evenly;
-    }
+    justify-content: space-evenly;
+  }
 }
