@@ -88,21 +88,21 @@
   border-collapse: collapse;
   border-spacing: 0;
 }
-.header #navbar .lista #submenu #carrito #lista-carrito thead tr .borrar-producto {
+.header #navbar .lista #submenu #carrito tbody {
+  font-size: 19px;
+}
+.header #navbar .lista #submenu #carrito tbody td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e1e1e1;
+}
+.header #navbar .lista #submenu #carrito tbody td .borrar-producto {
   background-color: rgb(255, 0, 0);
   border-radius: 50%;
   padding: 5px 10px;
   text-decoration: none;
   color: white;
   font-weight: bold;
-}
-.header #navbar .lista #submenu #carrito #lista-carrito tbody {
-  font-size: 19px;
-}
-.header #navbar .lista #submenu #carrito #lista-carrito tbody td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #e1e1e1;
 }
 .header #navbar .lista #submenu #carrito hr {
   margin-top: 20px;

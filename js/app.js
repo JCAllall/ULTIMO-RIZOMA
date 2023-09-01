@@ -36,7 +36,7 @@ function leerDatosProducto(producto) {
   const infoProducto = {
     imagen: producto.querySelector("img").src,
     titulo: producto.querySelector("h3").textContent,
-    precio: producto.querySelector(".precio").textContent,
+    precio: producto.querySelector(".precio span").textContent,
     id: producto.querySelector("a").getAttribute("data-id"),
     cantidad: 1,
   };
@@ -66,7 +66,7 @@ function leerDatosProducto(producto) {
   carritoHTML();
 }
 
-// Elimina el curso del carrito en el DOM
+// Elimina el producto del carrito en el DOM
 function eliminarProducto(e) {
   e.preventDefault();
   if (e.target.classList.contains("borrar-producto")) {
@@ -75,7 +75,7 @@ function eliminarProducto(e) {
 
     // Eliminar del arreglo del carrito
     articulosCarrito = articulosCarrito.filter(
-      (producto) => producto.id !== producto
+      (producto) => producto.id !== productoId
     );
 
     carritoHTML();
@@ -87,22 +87,23 @@ function carritoHTML() {
   vaciarCarrito();
 
   articulosCarrito.forEach((producto) => {
-    const { imagen, titulo, precio, cantidad, id } = producto;
     const row = document.createElement("tr");
     row.innerHTML = `
-               <td><img src="${imagen}" width=100></td>
-               <td>${titulo}</td>
-               <td>${precio}</td>
-               <td>${cantidad} </td>
-               <td>
-                    <a href="#" class="borrar-producto" data-id="${id}"> X </a>
-               </td>
-          `;
+            <td>  
+                 <img src="${producto.imagen}" width=100>
+            </td>
+            <td>${producto.titulo}</td>
+            <td>${producto.precio}</td>
+            <td>${producto.cantidad} </td>
+            <td>
+                 <a href="#" class="borrar-producto" data-id="${producto.id}">X</a>
+            </td>
+       `;
     contenedorCarrito.appendChild(row);
   });
 }
 
-// Elimina los cursos del carrito en el DOM
+// Elimina los productos del carrito en el DOM
 function vaciarCarrito() {
   // forma lenta
   // contenedorCarrito.innerHTML = '';
