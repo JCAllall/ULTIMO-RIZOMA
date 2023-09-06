@@ -4,6 +4,7 @@ const listaProductos = document.querySelector("#lista-productos");
 const contenedorCarrito = document.querySelector("#lista-carrito tbody");
 const vaciarCarritoBtn = document.querySelector(".vaciar-carrito");
 let articulosCarrito = [];
+let totalPagar = [];
 
 // Listeners
 cargarEventListeners();
