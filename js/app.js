@@ -114,3 +114,19 @@ function vaciarCarrito() {
     contenedorCarrito.removeChild(contenedorCarrito.firstChild);
   }
 }
+
+//Suma de precios en el carrito
+function calculateTotal(contenedorCarrito) {
+  let total = 0;
+  for (let i = 0; i < contenedorCarrito.length; i++) {
+    total += contenedorCarrito[i].precio * contenedorCarrito[i].cantidad;
+  }
+  return total;
+}
+
+//Llame a la calculateTotal función para obtener el monto total
+const totalAmount = calculateTotal(contenedorCarrito);
+console.log("Sub total: $" + totalAmount);
+
+const totalAmountElement = document.getElementById("totalAmount");
+totalAmountElement.textContent = "Sub total: $" + totalAmount;

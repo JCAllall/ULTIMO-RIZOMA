@@ -58,14 +58,98 @@
   justify-content: start;
   height: 86px;
   width: auto;
+  list-style: none;
 }
 .header #navbar .lista {
   display: flex;
   justify-content: space-evenly;
   width: 1200px;
 }
+.header #navbar .lista .links-nav {
+  height: 20px;
+  text-decoration: none;
+  color: rgb(1, 1, 27);
+  transition: all 0.5s;
+  display: inline-block;
+  list-style: none;
+  font-size: 20px;
+  transition: all 0.45s;
+}
+.header #navbar .lista .links-nav:hover {
+  transform: scale(1.02);
+  letter-spacing: 1px;
+  color: rgb(3, 3, 3);
+  background-color: rgba(255, 153, 0, 0.993);
+  border-radius: 3px;
+  padding: 1.5px 5px;
+  height: 100%;
+}
+.header #navbar .lista #dropdown {
+  overflow: hidden;
+}
+.header #navbar .lista #dropdown:hover {
+  display: block;
+}
+.header #navbar .lista #dropdown:hover .dropdown-content {
+  display: block;
+}
+.header #navbar .lista #dropdown .drop-nav {
+  height: 20px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: rgb(1, 1, 27);
+  transition: all 0.5s;
+  display: inline-block;
+  font-size: 20px;
+  transition: all 0.45s;
+  background-color: inherit;
+  font-family: inherit;
+  border: none;
+}
+.header #navbar .lista #dropdown .drop-nav:hover {
+  transform: scale(1.02);
+  letter-spacing: 1px;
+  color: rgb(3, 3, 3);
+  background-color: rgba(255, 153, 0, 0.993);
+  border-radius: 3px;
+  padding: 1.5px 5px;
+  height: 100%;
+}
+.header #navbar .lista #dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.header #navbar .lista #dropdown .dropdown-content .drop-a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: all 0.45s;
+}
+.header #navbar .lista #dropdown .dropdown-content .drop-a:hover {
+  letter-spacing: 1px;
+  color: rgb(3, 3, 3);
+  background-color: rgba(255, 187, 0, 0.822);
+  height: 100%;
+}
 .header #navbar .lista #submenu {
   position: relative;
+}
+.header #navbar .lista #submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: white;
+  padding: 20px;
+  min-height: 220px;
+  min-width: 350px;
 }
 .header #navbar .lista #submenu #img-carrito:hover {
   padding: 5px;
@@ -95,6 +179,7 @@
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #e1e1e1;
+  font-size: 15px;
 }
 .header #navbar .lista #submenu #carrito tbody td .borrar-producto {
   background-color: rgb(255, 0, 0);
@@ -112,6 +197,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  list-style: none;
 }
 .header #navbar .lista #submenu #carrito .btn-carrito .vaciar-carrito {
   text-align: center;
@@ -156,40 +242,6 @@
   transform: scale(1.088);
   background-color: rgb(255, 208, 0);
   color: black;
-}
-.header #navbar .lista #submenu:hover #carrito {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  z-index: 1;
-  background-color: white;
-  padding: 20px;
-  min-height: 220px;
-  min-width: 350px;
-}
-.header #navbar .lista li {
-  display: inline-block;
-  position: relative;
-  list-style: none;
-  font-size: 20px;
-  position: relative;
-  transition: all 0.45s;
-}
-.header #navbar .lista li:hover {
-  transform: scale(1.09);
-}
-.header #navbar .lista li .links-nav {
-  height: 20px;
-  text-decoration: none;
-  color: rgb(1, 1, 27);
-  transition: all 0.5s;
-}
-.header #navbar .lista li .links-nav:hover {
-  padding: 4.5px 6px;
-  color: rgb(3, 3, 3);
-  background-color: rgba(255, 153, 0, 0.993);
-  border-radius: 2.5px;
 }
 
 /* variables */
@@ -256,7 +308,6 @@
   text-align: center;
   font-size: 15px;
   margin-top: 10px;
-  text-decoration: line-through;
 }
 @media (min-width: 550px) {
   #lista-productos .div-card .precio {

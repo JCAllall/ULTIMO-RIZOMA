@@ -13,14 +13,24 @@
     <!-- header -->
     <header class="header">
         <div id="navbar">
-            <div class="logo"><a href="index.html" title=""><img src="images/LOGO RIZOMA AZUL COMBINADO (1).png" alt=""
-                        class="logo-header"></a></div>
-            <ul class="lista">
-                <li><a href="club.html" class="links-nav">RIZOMA CLUB</a></li>
-                <li><a href="shop.html" class="links-nav">SHOP</a></li>
-                <li><a href="catas.html" class="links-nav">CATAS</a></li>
-                <li><a href="nosotros.html" class="links-nav">NOSOTROS</a></li>
-                <li id="submenu">
+            <div class="logo"><a href="index.html" title=""><img src="images/LOGO RIZOMA AZUL COMBINADO (1).png" alt="" class="logo-header"></a>
+            </div>
+            <div class="lista">
+                <a href="club.html" class="links-nav">RIZOMA CLUB</a>
+                <div id="dropdown">
+                    <button href="shop.html" class="drop-nav">SHOP</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="drop-a">VINOS</a>
+                        <a href="#" class="drop-a">WHISKY</a>
+                        <a href="#" class="drop-a">GIN</a>
+                        <a href="#" class="drop-a">VODKA</a>
+                        <a href="#" class="drop-a">ESPUMANTES</a>
+                        <a href="#" class="drop-a">LICORES</a>
+                    </div>
+                </div>
+                <a href="catas.html" class="links-nav">CATAS</a>
+                <a href="nosotros.html" class="links-nav">NOSOTROS</a>
+                <div id="submenu">
                     <img src="/images/cart.png" id="img-carrito" alt="CARRITO">
                     <div id="carrito">
                         <table id="lista-carrito">
@@ -33,18 +43,17 @@
                                     <th></th>
                                 </tr>
                             </thead>
-
                             <tbody></tbody>
-
                         </table>
+                        <p id="totalAmount"></p>
                         <ul class="btn-carrito">
                             <li><a href="#"><button class="vaciar-carrito">Vaciar carrito</button></a></li>
                             <li><a href="#" class="btn-ver-cart"><button class="ver-carrito">Ver carrito</button></a>
                             </li>
                         </ul>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </div>
     </header>
 
