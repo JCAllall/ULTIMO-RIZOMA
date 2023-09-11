@@ -64,6 +64,9 @@
   display: flex;
   justify-content: space-evenly;
   width: 1200px;
+  height: 35px;
+  text-align: center;
+  align-items: center;
 }
 .header #navbar .lista .links-nav {
   height: 20px;
